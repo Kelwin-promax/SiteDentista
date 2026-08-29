@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kelwin Odontologia — Sorrisos que abrem portas</title>
+<meta name="description" content="Clínica odontológica com atendimento humanizado: implantes, ortodontia, clareamento e lentes de contato dental. Agende online e conheça nossos planos anuais.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦷</text></svg>">
+</head>
+<body>
+
+<!-- ============ TOPO / AVISO ============ -->
+<div class="topbar">
+  <div class="wrap topbar__in">
+    <span class="topbar__item"><svg viewBox="0 0 24 24" class="ic"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg> Av. das Acácias, 1420 — Jardim Paulista, SP</span>
+    <span class="topbar__sep"></span>
+    <span class="topbar__item"><svg viewBox="0 0 24 24" class="ic"><path d="M12 6v6l4 2 .8-1.6L13.5 11V6H12Zm0-4a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16Z"/></svg> Seg a Sex 8h–19h · Sáb 8h–13h</span>
+    <a class="topbar__phone" href="tel:+551140028922">(11) 4002-8922</a>
+  </div>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="wrap nav__in">
+    <a href="#inicio" class="brand">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32"><path d="M16 4c-2.2 0-3.2 1.1-5.4 1.1C7.4 5.1 5 7.6 5 11.6c0 5 1.6 8.2 2.8 12.1.7 2.3 1.3 4.3 2.8 4.3 1.7 0 2-2.4 2.5-5 .4-2.1.9-3.6 2.9-3.6s2.5 1.5 2.9 3.6c.5 2.6.8 5 2.5 5 1.5 0 2.1-2 2.8-4.3C25.4 19.8 27 16.6 27 11.6c0-4-2.4-6.5-5.6-6.5C19.2 5.1 18.2 4 16 4Z"/></svg>
+      </span>
+      <span class="brand__txt">
+        <strong>Kelwin</strong>
+        <em>Odontologia</em>
+      </span>
+    </a>
+
+    <nav class="menu" id="menu">
+      <a href="#servicos">Tratamentos</a>
+      <a href="#sobre">A clínica</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#planos">Planos</a>
+      <a href="#depoimentos">Pacientes</a>
+      <a href="#faq">Dúvidas</a>
+      <a href="#contato">Contato</a>
+      <a href="#agendar" class="btn btn--sm btn--primary menu__cta">Agendar consulta</a>
+    </nav>
+
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="inicio">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="wrap hero__in">
+    <div class="hero__copy reveal">
+      <span class="pill"><span class="dot"></span> Agenda aberta para setembro</span>
+      <h1>O seu sorriso merece um <em>cuidado</em> sob medida.</h1>
+      <p class="lead">
+        Odontologia integrada em um só lugar: diagnóstico digital, estética facial e
+        acompanhamento contínuo. Sem pressa, sem julgamento e com um plano de
+        tratamento que cabe no seu bolso.
+      </p>
+      <div class="hero__actions">
+        <a href="#agendar" class="btn btn--primary btn--lg">Agendar avaliação gratuita</a>
+        <a href="#planos" class="btn btn--ghost btn--lg">Ver planos</a>
+      </div>
+      <ul class="hero__trust">
+        <li><strong>4.9</strong><span>★★★★★ · 812 avaliações</span></li>
+        <li><strong>18 anos</strong><span>de clínica no bairro</span></li>
+        <li><strong>CRO-SP</strong><span>34.221</span></li>
+      </ul>
+    </div>
+
+    <figure class="hero__media reveal reveal--delay">
+      <img src="assets/img/equipe-completa.png" alt="Equipe da Kelwin Odontologia reunida no consultório" width="528" height="372">
+      <figcaption class="hero__card">
+        <div class="hero__card-ic" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M16 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-8 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm0 2c-2.7 0-8 1.3-8 4v2h9.5v-2c0-1 .4-1.9 1.1-2.6C9.8 13.1 8.8 13 8 13Zm8 0c-.3 0-.7 0-1.1.1 1 .8 1.6 1.8 1.6 2.9v2H24v-2c0-2.7-5.3-4-8-4Z"/></svg>
+        </div>
+        <div>
+          <strong>Dr. Kelwin Moura e equipe</strong>
+          <span>Fundador · CRO-SP 34.221</span>
+        </div>
+      </figcaption>
+      <div class="hero__badge">
+        <svg viewBox="0 0 24 24"><path d="M12 2 3 6v6c0 5 3.8 9.4 9 10 5.2-.6 9-5 9-10V6l-9-4Zm-1 14-4-4 1.4-1.4L11 13.2l5.6-5.6L18 9l-7 7Z"/></svg>
+        <span>Biossegurança<br><b>ISO 9001</b></span>
+      </div>
+    </figure>
+  </div>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Implantes com carga imediata</span><i>✦</i>
+      <span>Alinhadores invisíveis</span><i>✦</i>
+      <span>Lentes de contato dental</span><i>✦</i>
+      <span>Clareamento a laser</span><i>✦</i>
+      <span>Harmonização orofacial</span><i>✦</i>
+      <span>Odontopediatria</span><i>✦</i>
+      <span>Implantes com carga imediata</span><i>✦</i>
+      <span>Alinhadores invisíveis</span><i>✦</i>
+      <span>Lentes de contato dental</span><i>✦</i>
+      <span>Clareamento a laser</span><i>✦</i>
+      <span>Harmonização orofacial</span><i>✦</i>
+      <span>Odontopediatria</span><i>✦</i>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVIÇOS ============ -->
+<section class="section" id="servicos">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <span class="kicker">Tratamentos</span>
+      <h2>Tudo o que sua boca precisa, <em>sem correria entre clínicas</em></h2>
+      <p>Nove especialidades sob o mesmo teto e o mesmo prontuário. Você chega, é avaliado por
+         quem é referência naquilo e sai com o passo seguinte marcado.</p>
+    </header>
+
+    <div class="cards">
+      <article class="card reveal">
+        <span class="card__ic">
+          <svg viewBox="0 0 24 24"><path d="M12 3c-1.8 0-2.6.9-4.4.9C5 3.9 3 6 3 9.3c0 4.1 1.3 6.7 2.3 9.9.6 1.9 1 3.5 2.3 3.5 1.4 0 1.6-2 2-4.1.4-1.7.8-3 2.4-3s2 1.3 2.4 3c.4 2.1.6 4.1 2 4.1 1.3 0 1.7-1.6 2.3-3.5 1-3.2 2.3-5.8 2.3-9.9C21 6 19 3.9 16.4 3.9 14.6 3.9 13.8 3 12 3Z"/></svg>
+        </span>
+        <h3>Implantodontia</h3>
+        <p>Do dente unitário à reabilitação total com protocolo. Planejamento guiado por tomografia e cirurgia sem cortes na maioria dos casos.</p>
+        <span class="card__meta">a partir de R$ 2.400 · 12x sem juros</span>
+      </article>
+
+      <article class="card reveal">
+        <span class="card__ic">
+          <svg viewBox="0 0 24 24"><path d="M4 7h16v2H4V7Zm0 8h16v2H4v-2Zm2-4h3v2H6v-2Zm5 0h3v2h-3v-2Zm5 0h2v2h-2v-2Z"/></svg>
+        </span>
+        <h3>Ortodontia &amp; Alinhadores</h3>
+        <p>Aparelho fixo estético ou alinhadores transparentes com simulação 3D do resultado antes de você começar.</p>
+        <span class="card__meta">mensalidade a partir de R$ 189</span>
+      </article>
+
+      <article class="card reveal">
+        <span class="card__ic">
+          <svg viewBox="0 0 24 24"><path d="M12 2 9.6 8.6 3 11l6.6 2.4L12 20l2.4-6.6L21 11l-6.6-2.4L12 2Z"/></svg>
+        </span>
+        <h3>Estética do sorriso</h3>
+        <p>Lentes de contato dental, facetas em resina e clareamento a laser. Ensaio digital para você aprovar antes do primeiro desgaste.</p>
+        <span class="card__meta">projeto digital incluso</span>
+      </article>
+
+      <article class="card reveal">
+        <span class="card__ic">
+          <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.6-9-9.2C1.3 8 3.4 4.5 7 4.5c2 0 3.4 1 5 2.8 1.6-1.8 3-2.8 5-2.8 3.6 0 5.7 3.5 4 7.3C19 16.4 12 21 12 21Z"/></svg>
+        </span>
+        <h3>Odontopediatria</h3>
+        <p>Primeira consulta lúdica, sem trauma. Sala infantil, atendimento com pais na cadeira e programa de prevenção por idade.</p>
+        <span class="card__meta">consulta a partir de R$ 150</span>
+      </article>
+
+      <article class="card reveal">
+        <span class="card__ic">
+          <svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 0 0-5 5v3H5v12h14V10h-2V7a5 5 0 0 0-5-5Zm3 8H9V7a3 3 0 0 1 6 0v3Z"/></svg>
+        </span>
+        <h3>Periodontia</h3>
+        <p>Tratamento de gengiva sangrante, retração e mau hálito com raspagem ultrassônica e laserterapia de baixa potência.</p>
+        <span class="card__meta">sessões de 40 min</span>
+      </article>
+
+      <article class="card reveal">
+        <span class="card__ic">
+          <svg viewBox="0 0 24 24"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></svg>
+        </span>
+        <h3>Urgência 24h</h3>
+        <p>Dor, trauma ou restauração que soltou no fim de semana? Plantão com dentista de sobreaviso e vaga garantida em até 3 horas.</p>
+        <span class="card__meta">gratuito para assinantes</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NÚMEROS ============ -->
+<section class="stats">
+  <div class="wrap stats__in">
+    <div class="stat reveal"><b data-count="12480">0</b><span>pacientes atendidos</span></div>
+    <div class="stat reveal"><b data-count="3100">0</b><span>implantes instalados</span></div>
+    <div class="stat reveal"><b data-count="98">0</b><span>% de retorno em 2 anos</span></div>
+    <div class="stat reveal"><b data-count="9">0</b><span>especialistas na equipe</span></div>
+  </div>
+</section>
+
+<!-- ============ SOBRE ============ -->
+<section class="section section--split" id="sobre">
+  <div class="wrap split">
+    <div class="split__media reveal">
+      <img class="split__img" src="assets/img/atendimento.jpeg" alt="Dentista com máscara segurando o espelho clínico durante um atendimento" width="1200" height="896" style="object-position:46% center">
+      <img class="split__img split__img--float" src="assets/img/sorriso.jpeg" alt="Close de um sorriso após o tratamento" width="1024" height="1024">
+      <div class="split__quote">
+        <img class="split__quote-av" src="assets/img/retrato-beatriz.jpg" alt="Dra. Beatriz Nogueira" width="352" height="568" loading="lazy">
+        <span>“Ninguém deveria ter vergonha de abrir a boca no consultório.”</span>
+        <small>Dra. Beatriz Nogueira · Ortodontia</small>
+      </div>
+    </div>
+
+    <div class="split__copy reveal reveal--delay">
+      <span class="kicker">A clínica</span>
+      <h2>Dezoito anos tratando <em>gente</em>, não dentes soltos.</h2>
+      <p>
+        Começamos em 2008 numa sala de 30 m². Hoje somos seis consultórios, um centro cirúrgico
+        próprio e um laboratório de prótese na mesma laje — o que significa provas de peça no
+        mesmo dia e menos idas e vindas para você.
+      </p>
+      <ul class="checklist">
+        <li><b>Consulta de avaliação gratuita</b> com tomografia e fotografia intraoral inclusas.</li>
+        <li><b>Orçamento fechado por escrito</b>, sem cobrança de imprevisto no meio do tratamento.</li>
+        <li><b>Sedação consciente</b> com anestesista para quem tem medo de dentista.</li>
+        <li><b>Acessibilidade total</b>: elevador, cadeira adaptada e intérprete de Libras sob agendamento.</li>
+      </ul>
+      <div class="split__actions">
+        <a href="#agendar" class="btn btn--primary">Marcar minha avaliação</a>
+        <a href="#depoimentos" class="link-arrow">Ver histórias de pacientes</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EQUIPE ============ -->
+<section class="section section--soft" id="equipe">
+  <div class="wrap">
+    <header class="sec-head sec-head--center reveal">
+      <span class="kicker">Quem vai te atender</span>
+      <h2>Especialistas que <em>ficam</em> — você não troca de dentista a cada visita</h2>
+      <p>Cada paciente tem uma profissional responsável do começo ao fim do tratamento.
+         Se precisar de outra especialidade, a discussão do caso acontece entre elas, não com você no meio.</p>
+    </header>
+
+    <div class="team">
+      <article class="member member--lead reveal">
+        <div class="member__ph"><img src="assets/img/retrato-kelwin.jpg" alt="Dr. Kelwin Moura" width="768" height="1024" loading="lazy" style="object-position:center 20%"></div>
+        <div class="member__in">
+          <h3>Dr. Kelwin Moura</h3>
+          <span class="member__role">Fundador · Implantodontia · CRO-SP 34.221</span>
+          <p>Abriu a clínica em 2008 numa sala de 30 m². Mestre em Implantodontia pela USP, com mais de 3.100 implantes instalados e especialidade em casos que outras clínicas consideraram inviáveis.</p>
+          <span class="member__days">Atende seg, qua e sex</span>
+        </div>
+      </article>
+
+      <article class="member reveal reveal--delay">
+        <div class="member__ph"><img src="assets/img/equipe-ortodontia.jpeg" alt="Dra. Beatriz Nogueira" width="1200" height="896" loading="lazy" style="object-position:76% center"></div>
+        <div class="member__in">
+          <h3>Dra. Beatriz Nogueira</h3>
+          <span class="member__role">Ortodontia &amp; Alinhadores · CRO-SP 78.904</span>
+          <p>Especialista em ortodontia digital. Faz o planejamento 3D de cada caso e acompanha as trocas de alinhador por foto, sem exigir consulta a cada 15 dias.</p>
+          <span class="member__days">Atende ter, qui e sáb</span>
+        </div>
+      </article>
+
+      <article class="member reveal">
+        <div class="member__ph"><img src="assets/img/hero-dentista.jpeg" alt="Dra. Helena Silva" width="1200" height="880" loading="lazy" style="object-position:58% center"></div>
+        <div class="member__in">
+          <h3>Dra. Helena Silva</h3>
+          <span class="member__role">Estética do Sorriso · CRO-SP 52.118</span>
+          <p>Responsável pelo ensaio digital e pelas lentes de contato dental. Trabalha com o laboratório de prótese do andar de cima, o que permite prova e ajuste no mesmo dia.</p>
+          <span class="member__days">Atende seg, ter e qui</span>
+        </div>
+      </article>
+
+      <article class="member reveal reveal--delay">
+        <div class="member__ph"><img src="assets/img/sobre-dentista.jpeg" alt="Dra. Yara Lemos" width="1200" height="900" loading="lazy" style="object-position:74% center"></div>
+        <div class="member__in">
+          <h3>Dra. Yara Lemos</h3>
+          <span class="member__role">Odontopediatria &amp; Prevenção · CRO-SP 91.556</span>
+          <p>Cuida das crianças e do programa preventivo dos planos. Formada em manejo comportamental infantil — a primeira consulta é sempre sem procedimento.</p>
+          <span class="member__days">Atende ter, qui e sáb</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+<!-- ============ PLANOS ============ -->
+<section class="section section--dark" id="planos">
+  <div class="wrap">
+    <header class="sec-head sec-head--center reveal">
+      <span class="kicker">Planos de assinatura</span>
+      <h2>Prevenção que cabe no mês, <em>não no susto</em></h2>
+      <p>Assinatura anual da própria clínica — sem carência longa, sem burocracia de convênio,
+         com desconto direto em qualquer procedimento.</p>
+      <div class="switch" id="planSwitch">
+        <button class="switch__opt is-on" data-cycle="mensal">Mensal</button>
+        <button class="switch__opt" data-cycle="anual">Anual <i>-20%</i></button>
+      </div>
+    </header>
+
+    <div class="plans">
+      <article class="plan reveal">
+        <header>
+          <h3>Essencial</h3>
+          <p>Para quem só quer manter tudo em dia.</p>
+        </header>
+        <div class="plan__price">
+          <span class="cur">R$</span>
+          <b class="val" data-mensal="59" data-anual="47">59</b>
+          <span class="per">/mês por pessoa</span>
+        </div>
+        <ul class="plan__list">
+          <li>2 limpezas profissionais por ano</li>
+          <li>Raio-X e avaliação semestral</li>
+          <li>Aplicação de flúor e selante</li>
+          <li>10% de desconto em tratamentos</li>
+          <li class="off">Urgência 24h</li>
+          <li class="off">Clareamento incluso</li>
+        </ul>
+        <button class="btn btn--ghost btn--block js-plan" data-plan="Essencial">Assinar Essencial</button>
+        <small class="plan__foot">Sem fidelidade. Cancele quando quiser.</small>
+      </article>
+
+      <article class="plan plan--pop reveal reveal--delay">
+        <span class="plan__tag">Mais assinado</span>
+        <header>
+          <h3>Sorriso Completo</h3>
+          <p>Prevenção, estética e emergência juntas.</p>
+        </header>
+        <div class="plan__price">
+          <span class="cur">R$</span>
+          <b class="val" data-mensal="129" data-anual="103">129</b>
+          <span class="per">/mês por pessoa</span>
+        </div>
+        <ul class="plan__list">
+          <li>Tudo do plano Essencial</li>
+          <li><b>3 limpezas</b> + polimento estético</li>
+          <li><b>Urgência 24h gratuita</b></li>
+          <li>1 clareamento caseiro por ano</li>
+          <li>25% de desconto em tratamentos</li>
+          <li>Restaurações simples inclusas</li>
+        </ul>
+        <button class="btn btn--primary btn--block js-plan" data-plan="Sorriso Completo">Assinar Sorriso Completo</button>
+        <small class="plan__foot">Carência de 30 dias apenas para restaurações.</small>
+      </article>
+
+      <article class="plan reveal">
+        <header>
+          <h3>Família</h3>
+          <p>Até 4 pessoas, incluindo crianças.</p>
+        </header>
+        <div class="plan__price">
+          <span class="cur">R$</span>
+          <b class="val" data-mensal="289" data-anual="231">289</b>
+          <span class="per">/mês pela família</span>
+        </div>
+        <ul class="plan__list">
+          <li>Tudo do Sorriso Completo × 4</li>
+          <li>Odontopediatria ilimitada</li>
+          <li>Avaliação ortodôntica anual</li>
+          <li>30% de desconto em aparelhos</li>
+          <li>Urgência 24h para todos</li>
+          <li>Gerente de conta no WhatsApp</li>
+        </ul>
+        <button class="btn btn--ghost btn--block js-plan" data-plan="Família">Assinar Família</button>
+        <small class="plan__foot">Dependente extra: R$ 62/mês.</small>
+      </article>
+    </div>
+
+    <p class="plans__note reveal">
+      Também atendemos <b>Amil Dental, Bradesco Saúde, SulAmérica, Porto Seguro e Odontoprev</b>.
+      Reembolso facilitado — a gente emite a documentação para você.
+    </p>
+  </div>
+</section>
+
+<!-- ============ SORRISO / DESTAQUE ============ -->
+<section class="showcase">
+  <div class="wrap showcase__in">
+    <figure class="showcase__media reveal">
+      <img src="assets/img/sorriso.jpeg" alt="Close de um sorriso com dentes alinhados e brancos" width="1024" height="1024">
+    </figure>
+    <div class="showcase__copy reveal reveal--delay">
+      <span class="kicker">Protocolo Sorriso em 3 visitas</span>
+      <h2>Você aprova o resultado <em>antes</em> de começar.</h2>
+      <ol class="steps">
+        <li>
+          <span class="steps__n">01</span>
+          <div><b>Escaneamento e fotos</b><p>Sem massinha na boca. Escâner intraoral em 8 minutos e registro fotográfico do seu sorriso em movimento.</p></div>
+        </li>
+        <li>
+          <span class="steps__n">02</span>
+          <div><b>Ensaio digital + mock-up</b><p>Você vê o novo sorriso na sua própria foto e experimenta uma prévia em resina, na sua boca, sem desgaste.</p></div>
+        </li>
+        <li>
+          <span class="steps__n">03</span>
+          <div><b>Instalação e ajuste fino</b><p>Peças feitas no laboratório do andar de cima, instaladas no mesmo dia e revisadas em 7 dias sem custo.</p></div>
+        </li>
+      </ol>
+      <a href="#agendar" class="btn btn--primary">Quero meu ensaio digital</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DEPOIMENTOS ============ -->
+<section class="section" id="depoimentos">
+  <div class="wrap">
+    <header class="sec-head sec-head--center reveal">
+      <span class="kicker">Pacientes</span>
+      <h2>Quem senta na cadeira <em>volta e indica</em></h2>
+    </header>
+
+    <div class="testis reveal" id="testis">
+      <div class="testis__viewport">
+        <div class="testis__track" id="testisTrack">
+          <blockquote class="testi">
+            <div class="testi__stars">★★★★★</div>
+            <p>Passei 11 anos sem ir ao dentista de tanto medo. A Dra. Helena me deixou fazer a primeira consulta só conversando, sentada na poltrona da recepção. Hoje tenho os dois implantes que achava impossíveis.</p>
+            <footer><b>Renata Albuquerque</b><span>Implantes · paciente desde 2021</span></footer>
+          </blockquote>
+          <blockquote class="testi">
+            <div class="testi__stars">★★★★★</div>
+            <p>Fechei o plano Família por causa dos meus filhos. O que me ganhou foi a urgência: meu filho quebrou o dente num sábado à noite e às 22h já estávamos sendo atendidos, sem pagar nada além da mensalidade.</p>
+            <footer><b>Marcos Tanaka</b><span>Plano Família · paciente desde 2023</span></footer>
+          </blockquote>
+          <blockquote class="testi">
+            <div class="testi__stars">★★★★★</div>
+            <p>O ensaio digital mudou tudo. Eu tinha medo de ficar com aquele sorriso artificial e pude ajustar o formato dos dentes três vezes antes de autorizar. O orçamento fechado no papel também não mudou um centavo.</p>
+            <footer><b>Juliana Prado</b><span>Lentes de contato dental · 2024</span></footer>
+          </blockquote>
+          <blockquote class="testi">
+            <div class="testi__stars">★★★★★</div>
+            <p>Uso alinhador há 9 meses e nunca precisei faltar do trabalho: sempre consigo horário às 8h ou depois das 18h pelo agendamento do site, e o acompanhamento é por foto no WhatsApp entre as trocas.</p>
+            <footer><b>Diego Fontes</b><span>Alinhadores invisíveis · 2025</span></footer>
+          </blockquote>
+        </div>
+      </div>
+      <div class="testis__ctrl">
+        <button class="rnd" id="testiPrev" aria-label="Anterior">‹</button>
+        <div class="testis__dots" id="testiDots"></div>
+        <button class="rnd" id="testiNext" aria-label="Próximo">›</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AGENDAMENTO ============ -->
+<section class="section section--book" id="agendar">
+  <div class="wrap">
+    <header class="sec-head sec-head--center reveal">
+      <span class="kicker">Agendamento online</span>
+      <h2>Escolha o horário. <em>A gente confirma na hora.</em></h2>
+      <p>Leva menos de um minuto. Você recebe a confirmação por WhatsApp e um lembrete 24h antes.</p>
+    </header>
+
+    <div class="booking reveal" id="booking">
+      <ol class="booking__steps" id="bookingSteps">
+        <li class="is-active"><span>1</span> Tratamento</li>
+        <li><span>2</span> Data e hora</li>
+        <li><span>3</span> Seus dados</li>
+        <li><span>4</span> Pronto</li>
+      </ol>
+
+      <form class="booking__body" id="bookingForm" novalidate>
+
+        <!-- PASSO 1 -->
+        <div class="step is-active" data-step="1">
+          <h3 class="step__title">Qual atendimento você precisa?</h3>
+          <div class="opts" id="serviceOpts">
+            <label class="opt"><input type="radio" name="servico" value="Avaliação gratuita" checked>
+              <span class="opt__box"><b>Avaliação gratuita</b><small>40 min · sem custo</small></span></label>
+            <label class="opt"><input type="radio" name="servico" value="Limpeza e profilaxia">
+              <span class="opt__box"><b>Limpeza e profilaxia</b><small>50 min · R$ 190</small></span></label>
+            <label class="opt"><input type="radio" name="servico" value="Implantes">
+              <span class="opt__box"><b>Implantes</b><small>60 min · avaliação</small></span></label>
+            <label class="opt"><input type="radio" name="servico" value="Ortodontia / alinhadores">
+              <span class="opt__box"><b>Ortodontia / alinhadores</b><small>45 min · avaliação</small></span></label>
+            <label class="opt"><input type="radio" name="servico" value="Estética do sorriso">
+              <span class="opt__box"><b>Estética do sorriso</b><small>60 min · ensaio digital</small></span></label>
+            <label class="opt"><input type="radio" name="servico" value="Odontopediatria">
+              <span class="opt__box"><b>Odontopediatria</b><small>40 min · R$ 150</small></span></label>
+            <label class="opt"><input type="radio" name="servico" value="Urgência / dor">
+              <span class="opt__box"><b>Urgência / dor</b><small>encaixe no mesmo dia</small></span></label>
+            <label class="opt"><input type="radio" name="servico" value="Assinatura de plano">
+              <span class="opt__box"><b>Assinatura de plano</b><small>30 min · presencial</small></span></label>
+          </div>
+
+          <h3 class="step__title">Profissional</h3>
+          <div class="opts opts--3">
+            <label class="opt"><input type="radio" name="profissional" value="Qualquer profissional" checked>
+              <span class="opt__box"><b>Sem preferência</b><small>o primeiro horário livre</small></span></label>
+            <label class="opt"><input type="radio" name="profissional" value="Dr. Kelwin Moura">
+              <span class="opt__box"><b>Dr. Kelwin Moura</b><small>Implantes</small></span></label>
+            <label class="opt"><input type="radio" name="profissional" value="Dra. Helena Silva">
+              <span class="opt__box"><b>Dra. Helena Silva</b><small>Estética do sorriso</small></span></label>
+            <label class="opt"><input type="radio" name="profissional" value="Dra. Beatriz Nogueira">
+              <span class="opt__box"><b>Dra. Beatriz Nogueira</b><small>Ortodontia</small></span></label>
+            <label class="opt"><input type="radio" name="profissional" value="Dra. Yara Lemos">
+              <span class="opt__box"><b>Dra. Yara Lemos</b><small>Odontopediatria</small></span></label>
+          </div>
+
+          <div class="step__nav">
+            <span></span>
+            <button type="button" class="btn btn--primary js-next">Escolher data →</button>
+          </div>
+        </div>
+
+        <!-- PASSO 2 -->
+        <div class="step" data-step="2">
+          <div class="sched">
+            <div class="cal" id="cal">
+              <div class="cal__head">
+                <button type="button" class="rnd" id="calPrev" aria-label="Mês anterior">‹</button>
+                <strong id="calLabel">—</strong>
+                <button type="button" class="rnd" id="calNext" aria-label="Próximo mês">›</button>
+              </div>
+              <div class="cal__dow"><span>D</span><span>S</span><span>T</span><span>Q</span><span>Q</span><span>S</span><span>S</span></div>
+              <div class="cal__grid" id="calGrid"></div>
+              <p class="cal__legend"><i class="lg lg--free"></i> livre <i class="lg lg--sel"></i> selecionado <i class="lg lg--off"></i> sem atendimento</p>
+            </div>
+
+            <div class="slots">
+              <h3 class="step__title" id="slotsTitle">Selecione um dia ao lado</h3>
+              <div class="slots__grid" id="slotsGrid">
+                <p class="slots__empty">Os horários aparecem aqui depois que você escolher a data.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="step__nav">
+            <button type="button" class="btn btn--ghost js-prev">← Voltar</button>
+            <button type="button" class="btn btn--primary js-next" id="toStep3" disabled>Preencher meus dados →</button>
+          </div>
+        </div>
+
+        <!-- PASSO 3 -->
+        <div class="step" data-step="3">
+          <h3 class="step__title">Seus dados</h3>
+          <div class="fields">
+            <label class="field">
+              <span>Nome completo *</span>
+              <input type="text" name="nome" id="fNome" placeholder="Maria Aparecida Souza" autocomplete="name" required>
+              <em class="err"></em>
+            </label>
+            <label class="field">
+              <span>WhatsApp *</span>
+              <input type="tel" name="tel" id="fTel" placeholder="(11) 90000-0000" inputmode="numeric" maxlength="15" autocomplete="tel" required>
+              <em class="err"></em>
+            </label>
+            <label class="field">
+              <span>E-mail</span>
+              <input type="email" name="email" id="fEmail" placeholder="voce@email.com" autocomplete="email">
+              <em class="err"></em>
+            </label>
+            <label class="field">
+              <span>Convênio ou plano</span>
+              <select name="convenio" id="fConv">
+                <option>Particular</option>
+                <option>Assinante Kelwin — Essencial</option>
+                <option>Assinante Kelwin — Sorriso Completo</option>
+                <option>Assinante Kelwin — Família</option>
+                <option>Amil Dental</option>
+                <option>Bradesco Saúde</option>
+                <option>SulAmérica</option>
+                <option>Porto Seguro</option>
+                <option>Odontoprev</option>
+              </select>
+            </label>
+            <label class="field field--full">
+              <span>Algo que devemos saber antes? (opcional)</span>
+              <textarea name="obs" id="fObs" rows="3" placeholder="Ex.: tenho pressão alta, sinto muito medo de anestesia, uso anticoagulante..."></textarea>
+            </label>
+            <label class="check field--full">
+              <input type="checkbox" id="fLgpd" required>
+              <span>Autorizo o contato por WhatsApp e o uso dos meus dados para fins de atendimento, conforme a LGPD.</span>
+            </label>
+          </div>
+
+          <aside class="resume" id="resume"></aside>
+
+          <div class="step__nav">
+            <button type="button" class="btn btn--ghost js-prev">← Voltar</button>
+            <button type="submit" class="btn btn--primary" id="submitBtn">Confirmar agendamento</button>
+          </div>
+        </div>
+
+        <!-- PASSO 4 -->
+        <div class="step step--done" data-step="4">
+          <div class="done">
+            <div class="done__ic">
+              <svg viewBox="0 0 24 24"><path d="m10 16.2-3.5-3.5L5 14.2l5 5 9-9-1.4-1.4L10 16.2Z"/></svg>
+            </div>
+            <h3>Agendamento confirmado!</h3>
+            <p id="doneText">—</p>
+            <div class="done__card" id="doneCard"></div>
+            <div class="done__actions">
+              <a class="btn btn--primary" id="waBtn" href="#" target="_blank" rel="noopener">Confirmar no WhatsApp</a>
+              <button type="button" class="btn btn--ghost" id="icsBtn">Adicionar à agenda (.ics)</button>
+              <button type="button" class="btn btn--link" id="newBtn">Fazer outro agendamento</button>
+            </div>
+          </div>
+        </div>
+
+      </form>
+
+      <aside class="booking__side">
+        <h4>Como funciona</h4>
+        <ul>
+          <li><b>Sem fila de espera:</b> o horário que aparece livre é seu no ato.</li>
+          <li><b>Remarcação livre</b> até 4 horas antes, pelo WhatsApp.</li>
+          <li><b>Avaliação gratuita</b> inclui tomografia e plano de tratamento por escrito.</li>
+          <li><b>Estacionamento</b> conveniado a R$ 12 por 3 horas.</li>
+        </ul>
+        <div class="booking__side-box">
+          <b>Está com dor agora?</b>
+          <p>Ligue direto para o plantão. A gente dá jeito no mesmo dia.</p>
+          <a href="tel:+551140028922" class="btn btn--ghost btn--block">(11) 4002-8922</a>
+        </div>
+        <div class="booking__mine" id="myBookings"></div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section section--soft" id="faq">
+  <div class="wrap faq-wrap">
+    <header class="sec-head reveal">
+      <span class="kicker">Dúvidas frequentes</span>
+      <h2>O que os pacientes <em>sempre perguntam</em></h2>
+      <p>Não achou a sua? Chame no WhatsApp — respondemos em minutos no horário comercial.</p>
+      <a href="#contato" class="link-arrow">Falar com a recepção</a>
+    </header>
+
+    <div class="faq reveal" id="faqList">
+      <details class="qa"><summary>A avaliação é realmente gratuita?</summary>
+        <div><p>Sim. A primeira consulta inclui exame clínico, fotografias, radiografia panorâmica quando necessária e o plano de tratamento impresso. Você não paga nada e não tem obrigação de fechar o tratamento conosco — pode levar o orçamento para comparar.</p></div></details>
+
+      <details class="qa"><summary>Quanto tempo demora para conseguir um horário?</summary>
+        <div><p>Para avaliação, normalmente há vaga em 2 a 4 dias úteis. Casos de dor são encaixados no mesmo dia. Assinantes dos planos têm prioridade em uma fila separada.</p></div></details>
+
+      <details class="qa"><summary>Vocês parcelam? Em quantas vezes?</summary>
+        <div><p>Parcelamos em até 12x sem juros no cartão e em até 18x com boleto próprio da clínica (sujeito a análise). O orçamento é fechado por escrito: se surgir um imprevisto clínico, a gente absorve o custo, não repassa.</p></div></details>
+
+      <details class="qa"><summary>Tenho pânico de dentista. O que vocês fazem?</summary>
+        <div><p>Trabalhamos com sedação consciente (óxido nitroso) e, em casos maiores, com anestesista em centro cirúrgico próprio. Também permitimos a primeira consulta fora da cadeira, só para conversar e conhecer o ambiente.</p></div></details>
+
+      <details class="qa"><summary>O plano de assinatura tem carência?</summary>
+        <div><p>Limpezas, avaliações e urgência valem desde o primeiro dia. Restaurações inclusas no plano Sorriso Completo têm 30 dias de carência. Não há fidelidade: o cancelamento é feito por mensagem, sem multa.</p></div></details>
+
+      <details class="qa"><summary>Atendem crianças e pessoas com deficiência?</summary>
+        <div><p>Sim. Temos odontopediatra às terças, quintas e sábados, sala de espera infantil e estrutura acessível com cadeira adaptada. Intérprete de Libras mediante agendamento com 48h de antecedência.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTATO ============ -->
+<section class="section section--dark" id="contato">
+  <div class="wrap contact">
+    <div class="contact__copy reveal">
+      <span class="kicker">Contato</span>
+      <h2>Estamos a duas quadras do metrô.</h2>
+      <p>Av. das Acácias, 1420 — 4º andar · Jardim Paulista, São Paulo/SP · CEP 01415-002</p>
+
+      <ul class="contact__list">
+        <li>
+          <span class="contact__ic"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg></span>
+          <div><b>Telefone e plantão</b><a href="tel:+551140028922">(11) 4002-8922</a></div>
+        </li>
+        <li>
+          <span class="contact__ic"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/></svg></span>
+          <div><b>E-mail</b><a href="mailto:contato@kelwinodontologia.com.br">contato@kelwinodontologia.com.br</a></div>
+        </li>
+        <li>
+          <span class="contact__ic"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.4-1.1-2.7s.7-1.9 1-2.2c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.4.1.6-.1l.9-1c.2-.2.4-.2.6-.1l2 .9c.2.1.4.2.4.3.1.2.1.6-.1 1.1Z"/></svg></span>
+          <div><b>WhatsApp</b><a href="https://wa.me/5511940028922" target="_blank" rel="noopener">(11) 94002-8922</a></div>
+        </li>
+      </ul>
+
+      <div class="hours">
+        <div><span>Segunda a sexta</span><b>08h — 19h</b></div>
+        <div><span>Sábado</span><b>08h — 13h</b></div>
+        <div><span>Domingo</span><b>Somente urgência</b></div>
+      </div>
+    </div>
+
+    <form class="contact__form reveal reveal--delay" id="contactForm" novalidate>
+      <h3>Mande uma mensagem</h3>
+      <label class="field"><span>Nome</span><input type="text" name="cnome" required><em class="err"></em></label>
+      <label class="field"><span>WhatsApp ou e-mail</span><input type="text" name="ccontato" required><em class="err"></em></label>
+      <label class="field"><span>Mensagem</span><textarea name="cmsg" rows="4" required placeholder="Conte rapidamente o que você precisa..."></textarea><em class="err"></em></label>
+      <button class="btn btn--primary btn--block" type="submit">Enviar mensagem</button>
+      <p class="contact__ok" id="contactOk" hidden>Mensagem registrada! Nossa recepção responde em até 1 hora útil.</p>
+      <small>Ao enviar você concorda com nossa Política de Privacidade.</small>
+    </form>
+  </div>
+
+  <div class="map" aria-label="Mapa da localização">
+    <div class="map__grid" aria-hidden="true"></div>
+    <div class="map__pin">
+      <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+      <span>Kelwin Odontologia</span>
+    </div>
+    <a class="map__btn" href="https://www.google.com/maps/search/?api=1&query=Av.+das+Acácias+1420+Jardim+Paulista+São+Paulo+SP" target="_blank" rel="noopener">Abrir no Google Maps</a>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="foot">
+  <div class="wrap foot__in">
+    <div class="foot__brand">
+      <a href="#inicio" class="brand brand--light">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><path d="M16 4c-2.2 0-3.2 1.1-5.4 1.1C7.4 5.1 5 7.6 5 11.6c0 5 1.6 8.2 2.8 12.1.7 2.3 1.3 4.3 2.8 4.3 1.7 0 2-2.4 2.5-5 .4-2.1.9-3.6 2.9-3.6s2.5 1.5 2.9 3.6c.5 2.6.8 5 2.5 5 1.5 0 2.1-2 2.8-4.3C25.4 19.8 27 16.6 27 11.6c0-4-2.4-6.5-5.6-6.5C19.2 5.1 18.2 4 16 4Z"/></svg>
+        </span>
+        <span class="brand__txt"><strong>Kelwin</strong><em>Odontologia</em></span>
+      </a>
+      <p>Cuidado odontológico completo no Jardim Paulista desde 2008.<br>
+         Responsável técnico: Dr. Kelwin Moura — CRO-SP 34.221.</p>
+    </div>
+
+    <nav class="foot__col">
+      <h5>Tratamentos</h5>
+      <a href="#servicos">Implantodontia</a>
+      <a href="#servicos">Ortodontia</a>
+      <a href="#servicos">Estética do sorriso</a>
+      <a href="#servicos">Odontopediatria</a>
+      <a href="#servicos">Urgência 24h</a>
+    </nav>
+
+    <nav class="foot__col">
+      <h5>Clínica</h5>
+      <a href="#sobre">Sobre nós</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#planos">Planos</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#faq">Dúvidas</a>
+      <a href="#agendar">Agendar</a>
+    </nav>
+
+    <div class="foot__col">
+      <h5>Receba dicas de prevenção</h5>
+      <form class="news" id="newsForm">
+        <input type="email" placeholder="seu@email.com" required aria-label="E-mail">
+        <button class="btn btn--primary" type="submit">Ok</button>
+      </form>
+      <small id="newsOk" hidden>Pronto! Você entrou na lista.</small>
+      <div class="social">
+        <a href="https://www.instagram.com/kelwinodontologia" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 7.4a4.6 4.6 0 1 0 0 9.2 4.6 4.6 0 0 0 0-9.2Zm0 7.6a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm5.9-7.8a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0ZM21 8c0-1.8-.4-3.3-1.7-4.5C18.1 2.2 16.6 1.8 14.8 1.8H9.2C7.4 1.8 5.9 2.2 4.7 3.5 3.4 4.7 3 6.2 3 8v8c0 1.8.4 3.3 1.7 4.5 1.2 1.3 2.7 1.7 4.5 1.7h5.6c1.8 0 3.3-.4 4.5-1.7 1.3-1.2 1.7-2.7 1.7-4.5V8Zm-1.9 9.6c-.3.8-1 1.5-1.8 1.8-1.2.5-4.1.4-5.3.4s-4.1.1-5.3-.4c-.8-.3-1.5-1-1.8-1.8-.5-1.2-.4-4.1-.4-5.6s-.1-4.4.4-5.6c.3-.8 1-1.5 1.8-1.8C7.9 4.1 10.8 4.2 12 4.2s4.1-.1 5.3.4c.8.3 1.5 1 1.8 1.8.5 1.2.4 4.1.4 5.6s.1 4.4-.4 5.6Z"/></svg></a>
+        <a href="https://www.facebook.com/kelwinodontologia" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 22v-8h2.7l.4-3.1h-3.1V8.9c0-.9.25-1.5 1.55-1.5h1.65V4.6c-.3 0-1.3-.1-2.45-.1-2.4 0-4.05 1.5-4.05 4.2v2.2H7.5V14h2.7v8h3.3Z"/></svg></a>
+        <a href="https://www.youtube.com/@kelwinodontologia" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M21.6 7.2s-.2-1.4-.8-2c-.75-.8-1.6-.8-2-.85C16 4.2 12 4.2 12 4.2s-4 0-6.8.2c-.4.05-1.25.05-2 .85-.6.6-.8 2-.8 2S2.2 8.8 2.2 10.4v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.75.8 1.75.75 2.2.85 1.6.15 6.8.2 6.8.2s4 0 6.8-.2c.4-.05 1.25-.05 2-.85.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5c0-1.6-.2-3.2-.2-3.2ZM10.1 14.2V8.9l5.15 2.65-5.15 2.65Z"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap foot__bottom">
+    <span>© <span id="year">2026</span> Kelwin Odontologia LTDA · CNPJ 12.345.678/0001-90</span>
+    <span class="foot__links"><a href="#">Política de Privacidade</a><a href="#">Termos de uso</a><a href="#faq">Ajuda</a></span>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/5511940028922?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.4-1.1-2.7s.7-1.9 1-2.2c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.4.1.6-.1l.9-1c.2-.2.4-.2.6-.1l2 .9c.2.1.4.2.4.3.1.2.1.6-.1 1.1Z"/></svg>
+  <span>Fale conosco</span>
+</a>
+
+<div class="toast" id="toast"></div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
